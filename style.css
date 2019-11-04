@@ -1,0 +1,197 @@
+body {
+  background-color: #333;
+  color: #bbb;
+  font-size: 1.15em;
+  font-weight: normal;
+  font-family: monospace;
+}
+
+h4 {
+  color: #888;
+  font-size: 0.8em;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+button,
+input  {
+  padding: 4px 10px;
+  font-size: 0.5em;
+  text-transform: uppercase;
+  min-width: 96%;
+  margin-bottom: 12px;
+}
+
+a {
+  color: #ea9240;
+  font-weight: bold;
+}
+
+#menu input {
+  line-height: 2.65em;
+  padding: 0px;
+}
+
+#menu button,
+#menu input {
+  min-width: 20%;
+}
+
+#menu {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+#menu li {
+  float: left;
+  margin-right: 10px;
+}
+
+#menu button {
+  float left;
+}
+
+#dataTabContainer {
+  float: left;
+  width: 80%;
+  display: inline-block;
+}
+
+#dataLineTab {
+  background-color: #2d2d30;
+  float: left;
+  text-align: right;
+  overflow: hidden;
+  min-width: 32px;
+  text-shadow: 2px 0px #111;
+  font-size: 0.85em;
+  color: #ccc;
+  border: 1px solid #888;
+  border-right: none;
+  padding: 14px;
+  font-weight: normal;
+  max-height: 505px;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+#dataLineTab .active {
+  background-color: #2d402d;
+  color: #fff;
+}
+
+#dataLineTab span {
+  cursor: pointer;
+  display: block;
+}
+
+#dataLineTab .highlighted {
+  background-color: #6a6aad;
+  color: #fff;
+  text-shadow: none;
+  font-weight: bold;
+}
+
+#dataTab {
+  font-size: 0.85em;
+  background-color: #20202d;
+  color: #bbb;
+  cursor: default;
+  border: 1px solid #888;
+  padding: 14px;
+  word-wrap: break-word;
+  overflow-y: scroll;
+  font-weight: normal;
+  max-height: 505px;
+  text-shadow: 2px 0px #111;
+}
+
+#dataTab span::selection {
+  color: #888;
+}
+
+#dataTab span::-moz-selection {
+  color: #888;
+}
+
+#dataTab span {
+  cursor: default;
+  padding-left: 0.125em;
+  padding-right: 0.125em;
+}
+
+#dataTab .lineHighlight {
+  background-color: #6a6aad;
+  color: #fff;
+  text-shadow: none;
+  font-weight: bold;
+}
+#dataTab .highlight {
+  background-color: #000;
+  color: #00a000;
+  cursor: pointer;
+}
+
+
+#dataTab .highlight.active {
+  color: #fff;
+  font-weight: bold;
+}
+
+#dataTab .highlight.mouseover {
+  color: #90c000;
+}
+
+#dataTab .highlight.first {
+  padding-left: 0.2em;
+  margin-left: 0.75em;
+}
+
+#dataTab .highlight.last {
+  padding-right: 0.2em;
+  margin-right: 0.75em;
+}
+
+#dataMarkerTab {
+  float: right;
+  margin-left: 1%;
+  width: 17%;
+  display: inline-block;
+}
+
+#dataMarkerTab h4 {
+  line-height: 2em;
+  border-bottom: 1px solid #888;
+  padding-left: 20px;
+}
+
+.dKey, .dValue {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.dKey {
+  font-size: 0.65em;
+  width: 40%;
+  margin-right: 2%;
+  float: left;
+  clear: both;
+}
+
+.dValue {
+  color: #ddd;
+  font-size: 0.75em;
+  width: 46%;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+}
+
+.clearfix {
+  display: block;
+  clear: both;
+}

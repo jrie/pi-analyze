@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>uniqs tilde.fun - pi analyze tool</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+  <div>
+    <a href="../index.html">&laquo;  uniqs tilde.fun page</a><br/>
+    <h4>Menu</h4>
+    <ul id="menu">
+      <li><button data-command="ssearchval">Use mouse selection</button></li>
+      <li><input type="text" placeholder="Search value" autocomplete="off" size="100" maxlength="100" id="iSearchValue" /></li>
+      <li><button data-command="searchGroups">Search groups</button></li>
+      <li><button data-command="reset">Reset</button></li>
+    </ul>
+    <div class="clearfix" id="dataTabContainer">
+      <h4>Pi data</h4>
+      <div id="dataLineTab"></div>
+      <div id="dataTab"></div>
+    </div>
+
+    <div id="dataMarkerTab">
+      <div>
+        <h4>Search value</h4>
+        <span class="dKey">Search value</span><span class="dValue" id="dSearchValue">---</span>
+        <span class="dKey">Start</span><span class="dValue" id="dSearchValueStart">0</span>
+        <span class="dKey">End</span><span class="dValue" id="dSearchValueEnd">0</span>
+        <span class="dKey">Length</span><span class="dValue" id="dSearchValueSize">0</span>
+      </div>
+
+      <div class="clearfix" id="dataStats">
+        <h4>Group information</h4>
+        <span class="dKey">Group count</span><span class="dValue" id="dGroupCount">0</span>
+        <span class="dKey">First group</span><span class="dValue" id="dGroupFirst">---</span>
+        <span class="dKey">Second group</span><span class="dValue" id="dGroupEnd">---</span>
+        <span class="dKey">Spread</span><span class="dValue" id="dGroupPercent">0 %</span>
+
+        <h4>Active group</h4>
+        <span class="dKey">Position</span><span class="dValue" id="dPiPos">0 / 0</span>
+        <span class="dKey">Start</span><span class="dValue" id="dPiStart">---</span>
+        <span class="dKey">End</span><span class="dValue" id="dPiEnd">---</span>
+        <span class="dKey">Index</span><span class="dValue" id="dPiIndex">---</span>
+      </div>
+
+      <div class="clearfix" id="searchControls">
+        <h4>Controls</h4>
+        <ul>
+          <li><button data-command="snext">[N]ext group</button></li>
+          <li><button data-command="sprev">[P]revious group</button></li>
+          <li><button data-command="sfirst">[F]irst group</button></li>
+          <li><button data-command="slast">[L]last group</button></li>
+        </ul>
+      </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="pi.js"></script>
+</body>
+</html>
