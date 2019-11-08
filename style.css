@@ -1,6 +1,6 @@
 body {
   background-color: #333;
-  color: #bbb;
+  color: #ccc;
   font-size: 1.15em;
   font-weight: normal;
   font-family: monospace;
@@ -26,45 +26,38 @@ input  {
   margin-bottom: 12px;
 }
 
-a {
-  color: #ea9240;
-  font-weight: bold;
-}
-
-#menu input {
-  line-height: 2.65em;
-  padding: 0px;
-}
-
-#menu button,
-#menu input {
-  min-width: 20%;
-}
-
 #menu {
-  display: inline-block;
-  width: 100%;
+  display: inline-flex;
   padding-bottom: 5px;
 }
 
 #menu li {
-  float: left;
+  flex-grow: 1;
   margin-right: 10px;
 }
 
-#menu button {
-  float left;
+#menu input {
+  padding: 0px;
+}
+
+#flexMain {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+#flexMain > h4 {
+  display: block;
+  width: 100%;
 }
 
 #dataTabContainer {
-  float: left;
+  display: inline-flex;
   width: 80%;
-  display: inline-block;
 }
 
 #dataLineTab {
   background-color: #2d2d30;
-  float: left;
   text-align: right;
   overflow: hidden;
   min-width: 32px;
@@ -109,17 +102,18 @@ a {
   font-weight: normal;
   max-height: 505px;
   text-shadow: 2px 0px #111;
+  max-width: 95%;
 }
 
-#dataTab span::selection {
+#dataTab > span::selection {
   color: #888;
 }
 
-#dataTab span::-moz-selection {
+#dataTab > span::-moz-selection {
   color: #888;
 }
 
-#dataTab span {
+#dataTab > span {
   cursor: default;
   padding-left: 0.125em;
   padding-right: 0.125em;
@@ -136,7 +130,6 @@ a {
   color: #00a000;
   cursor: pointer;
 }
-
 
 #dataTab .highlight.active {
   color: #fff;
@@ -158,10 +151,9 @@ a {
 }
 
 #dataMarkerTab {
-  float: right;
   margin-left: 1%;
   width: 17%;
-  display: inline-block;
+  max-width: 17%;
 }
 
 #dataMarkerTab h4 {
@@ -177,21 +169,19 @@ a {
 
 .dKey {
   font-size: 0.65em;
-  width: 40%;
+  max-width: 28%;
+  width: 28%;
   margin-right: 2%;
-  float: left;
-  clear: both;
 }
 
 .dValue {
   color: #ddd;
   font-size: 0.75em;
-  width: 46%;
   word-wrap: break-word;
   margin-bottom: 10px;
+  width: 68%;
 }
 
 .clearfix {
-  display: block;
   clear: both;
 }

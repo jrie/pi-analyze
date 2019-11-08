@@ -14,44 +14,46 @@
       <li><button data-command="searchGroups">Search groups</button></li>
       <li><button data-command="reset">Reset</button></li>
     </ul>
-    <div class="clearfix" id="dataTabContainer">
-      <h4>Pi data</h4>
-      <div id="dataLineTab"></div>
-      <div id="dataTab"></div>
-    </div>
+    <div class="clearfix" id="flexMain">
+      <h4>Pi number data:</h4>
+      <div id="dataTabContainer">
+        <div id="dataLineTab"></div>
+        <div id="dataTab"></div>
+      </div>
 
-    <div id="dataMarkerTab">
-      <div>
+      <div id="dataMarkerTab">
         <h4>Search value</h4>
-        <span class="dKey">Search value</span><span class="dValue" id="dSearchValue">---</span>
-        <span class="dKey">Start</span><span class="dValue" id="dSearchValueStart">0</span>
-        <span class="dKey">End</span><span class="dValue" id="dSearchValueEnd">0</span>
-        <span class="dKey">Length</span><span class="dValue" id="dSearchValueSize">0</span>
-      </div>
+        <div>
+          <span class="dKey">Search value</span><span class="dValue" id="dSearchValue">---</span>
+          <span class="dKey">Start</span><span class="dValue" id="dSearchValueStart">0</span>
+          <span class="dKey">End</span><span class="dValue" id="dSearchValueEnd">0</span>
+          <span class="dKey">Length</span><span class="dValue" id="dSearchValueSize">0</span>
+        </div>
 
-      <div class="clearfix" id="dataStats">
         <h4>Group information</h4>
-        <span class="dKey">Group count</span><span class="dValue" id="dGroupCount">0</span>
-        <span class="dKey">First group</span><span class="dValue" id="dGroupFirst">---</span>
-        <span class="dKey">Second group</span><span class="dValue" id="dGroupEnd">---</span>
-        <span class="dKey">Spread</span><span class="dValue" id="dGroupPercent">0 %</span>
+        <div class="clearfix" id="dataStats">
+          <span class="dKey">Group count</span><span class="dValue" id="dGroupCount">0</span>
+          <span class="dKey">First group</span><span class="dValue" id="dGroupFirst">---</span>
+          <span class="dKey">Last group</span><span class="dValue" id="dGroupEnd">---</span>
+          <span class="dKey">Spread</span><span class="dValue" id="dGroupPercent">0 %</span>
 
-        <h4>Active group</h4>
-        <span class="dKey">Position</span><span class="dValue" id="dPiPos">0 / 0</span>
-        <span class="dKey">Start</span><span class="dValue" id="dPiStart">---</span>
-        <span class="dKey">End</span><span class="dValue" id="dPiEnd">---</span>
-        <span class="dKey">Index</span><span class="dValue" id="dPiIndex">---</span>
-      </div>
+          <h4>Active group</h4>
+          <span class="dKey">Position</span><span class="dValue" id="dPiPos">0 / 0</span>
+          <span class="dKey">Start</span><span class="dValue" id="dPiStart">---</span>
+          <span class="dKey">End</span><span class="dValue" id="dPiEnd">---</span>
+          <span class="dKey">Index</span><span class="dValue" id="dPiIndex">---</span>
+        </div>
 
-      <div class="clearfix" id="searchControls">
-        <h4>Controls</h4>
-        <ul>
-          <li><button data-command="snext">[N]ext group</button></li>
-          <li><button data-command="sprev">[P]revious group</button></li>
-          <li><button data-command="sfirst">[F]irst group</button></li>
-          <li><button data-command="slast">[L]last group</button></li>
-        </ul>
-      </div>
+        <div class="clearfix" id="searchControls">
+          <h4>Controls</h4>
+          <ul>
+            <li><button data-command="snext">[N]ext group</button></li>
+            <li><button data-command="sprev">[P]revious group</button></li>
+            <li><button data-command="sfirst">[F]irst group</button></li>
+            <li><button data-command="slast">[L]last group</button></li>
+          </ul>
+        </div>
+    </div>
   </div>
 </div>
 
